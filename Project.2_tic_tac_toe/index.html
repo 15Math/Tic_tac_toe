@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="lobby">
+        <header id="title">
+            <div>
+                <h1 id="c1" >J</h1>
+                <h1 id="c2" >O</h1>
+                <h1 id="c3" >G</h1>
+                <h1 id="c4" >O</h1>
+            </div>
+            <div>
+                <h1 id="c5" >D</h1>
+                <h1 id="c6" >A</h1>
+            </div>
+            <div>
+                <h1 id="c7" >V</h1>
+                <h1 id="c8" >E</h1>
+                <h1 id="c9" >L</h1>
+                <h1 id="c10" >H</h1>
+                <h1 id="c11" >A</h1>
+            </div>
+        </header>
+
+            
+        <section id="player-sec">
+            <div class="players">
+                <div>
+                    <h2>Jogador 1(X)</h2>
+                    <input type="text" name="player1" id="player-1" class="nameInp"  maxlength="10" placeholder="Nome do X"></input>
+                </div>
+                <div class="ready-mark">
+                    <p>CLICK!</p>
+                    <input type="radio" id="ready-1" class="btn ready-btn"></input>
+                </div>
+            </div>
+
+            <div id="vs" class="players">
+                <h2>Vs</h2>
+            </div>
+            
+            <div class="players">
+                <div >
+                    <h2>Jogador 2(O)</h2>
+                    <input type="text" name="player2" id="player-2" class="nameInp" maxlength="10" placeholder="Nome do O">
+                </div>
+                <div class="ready-mark">
+                    <p>CLICK!</p>
+                    <input type="radio" id="ready-2" class="btn ready-btn"></input>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <section id="game-area">
+        
+        <div id="top-box">
+            <p id="txt">Vez de:</p>
+            <h1 id="player-name"></h1>
+        </div>
+
+        <div id="area">
+            <button class="square" id="a-1" data-value=""></button>
+            <button class="square" id="a-2" data-value=""></button>
+            <button class="square" id="a-3" data-value=""></button>
+            <button class="square" id="b-1" data-value=""></button>
+            <button class="square" id="b-2" data-value=""></button>
+            <button class="square" id="b-3" data-value=""></button>
+            <button class="square" id="c-1" data-value=""></button>
+            <button class="square" id="c-2" data-value=""></button>
+            <button class="square" id="c-3" data-value=""></button>
+        </div>
+
+
+    </section>
+    <section id="reset-btns">
+        <button id="reset" class="r-btn">
+            <p>Reiniciar >>></p>
+        </button >
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
